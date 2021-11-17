@@ -23,7 +23,7 @@ describe("User can see list of projects", () => {
   it("displays the third projects", () => {
     cy.get("#project-3").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "MobileUX");
+      cy.get(".header").should("contain", "Mobile UX");
       cy.get(".description").should(
         "contain",
         "I like to design for the mobile platform."
