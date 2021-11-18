@@ -14,7 +14,7 @@ const Header = () => {
         />
         <Menu.Item
           id="about-tab"
-          name="about meo"
+          name="about me"
           as={NavLink}
           to={{ pathname: "/about" }}
         />
