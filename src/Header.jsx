@@ -1,11 +1,14 @@
 import React from "react";
-import { Menu, Segment } from "semantic-ui-react";
+import { Menu, Segment, Header } from "semantic-ui-react";
 import { NavLink, Link } from "react-router-dom";
 
-const Header = () => {
+const HeaderComponent = ({ fullName }) => {
   return (
     <Segment inverted>
-      <Menu inverted secondary>
+      <Header inverted textAlign="center">
+        Welcome to Portfolio of {fullName}
+      </Header>
+      <Menu secondary inverted>
         <Menu.Item
           id="header"
           name="my portfolio"
@@ -29,4 +32,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;
