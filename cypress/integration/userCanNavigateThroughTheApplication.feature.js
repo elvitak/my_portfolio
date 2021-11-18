@@ -56,4 +56,22 @@ describe("User can navigate the app", () => {
       cy.get("#projects-header").should("not.exist");
     });
   });
+  describe("to CV tab and it", () => {
+    beforeEach(() => {
+      cy.get("#about-tab").click();
+      cy.get("#projects-tab").click();
+    });
+    it("is expected to display CV", () => {
+      cy.get("#cv").should("contain", "Curriculum Vitae");
+    });
+    it("displays correct url", () => {
+      cy.url().should("not.contain", "projects").and("not.contain", "about");
+    });
+    it("does not display About me header", () => {
+      cy.get("#about-header").should("not.exist");
+    });
+    it("does not display My Projects header", () => {
+      cy.get("#projects-header").should("not.exist");
+    });
+  });
 });
