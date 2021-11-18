@@ -22,6 +22,12 @@ const HeaderComponent = ({ fullName }) => {
           to={{ pathname: "/about" }}
         />
         <Menu.Item
+          id="cv-tab"
+          name="CV"
+          as={NavLink}
+          to={{ pathname: "/cv" }}
+        />
+        <Menu.Item
           id="projects-tab"
           name="my portfolio"
           as={NavLink}

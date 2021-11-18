@@ -60,6 +60,7 @@ describe("User can navigate the app", () => {
     beforeEach(() => {
       cy.get("#about-tab").click();
       cy.get("#projects-tab").click();
+      cy.get("#cv-tab").click();
     });
     it("is expected to display CV", () => {
       cy.get("#cv").should("contain", "Curriculum Vitae");
