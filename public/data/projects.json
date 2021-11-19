@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "My First Website",
-    "image": "http://www.4president.us/websites/2000/2000w/gore2000home.gif",
+    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--RmQt2L9P--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/g5jv0ejnl67cbgybddja.png",
     "description": "This was my first project."
   },
   {
