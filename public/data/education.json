@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "institution": "Riga Technical University",
+    "programm": "Bachelor's degree, Transport System Engineering",
+    "period": "2011-2015",
+    "description": "Logistics, Mechanics, Dangerous Cargo, Materials of Vehicle"
+  },
+  {
+    "id": 2,
+    "institution": "Uppsala University",
+    "programm": "Master's degree, Industrial Management and Innovation",
+    "period": "2016-2018",
+    "description": "Innovation Management, Project management, Change Management and Design Thinking"
+  },
+  {
+    "id": 3,
+    "institution": "Craft Academy",
+    "programm": "sertificate of excellence , Junior developer",
+    "period": "2021",
+    "description": "12 week intensive Bootcamp + 4 week Prep course"
+  }
+]

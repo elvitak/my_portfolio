@@ -5,37 +5,34 @@ describe("User can see list of education", () => {
   });
   it("is expected to see first educational institution", () => {
     cy.get("#edu-1").within(() => {
-      cy.get(".institution").should("conatin", "Riga Technical University");
-      cy.get(".programm").should(
+      cy.get(".item").should("contain", "Riga Technical University");
+      cy.get(".header").should(
         "contain",
         "Bachelor's degree, Transport System Engineering"
       );
-      cy.get(".period").should("contain", "2011-2015");
-      cy.get(".description").should("contain", "Logistics, Mechanics");
+      cy.get(".description").should("contain", "2011-2015");
     });
   });
 
   it("is expected to see second educational institution", () => {
     cy.get("#edu-2").within(() => {
-      cy.get(".institution").should("conatin", "Uppsala University");
-      cy.get(".programm").should(
+      cy.get(".item").should("contain", "Uppsala University");
+      cy.get(".header").should(
         "contain",
         "Master's degree, Industrial Management and Innovation"
       );
-      cy.get(".period").should("contain", "2016-2018");
-      cy.get(".description").should("contain", "Innovation Management");
+      cy.get(".description").should("contain", "2016-2018");
     });
   });
 
   it("is expected to see third educational institution", () => {
     cy.get("#edu-3").within(() => {
-      cy.get(".institution").should("conatin", "Craft Academy");
-      cy.get(".programm").should(
+      cy.get(".item").should("contain", "Craft Academy");
+      cy.get(".header").should(
         "contain",
         "sertificate of excellence , Junior developer"
       );
-      cy.get(".period").should("contain", "2021");
-      cy.get(".description").should("contain", "Bootcamp");
+      cy.get(".description").should("contain", "2021");
     });
   });
 });
