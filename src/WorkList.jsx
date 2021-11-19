@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, List } from "semantic-ui-react";
+import { List } from "semantic-ui-react";
 
 const WorkList = ({ work }) => {
   return (
