@@ -2,13 +2,20 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Container, List } from "semantic-ui-react";
 import EducationList from "./EducationList";
+import WorkList from "./WorkList";
 
 const CV = () => {
   const [education, setEducation] = useState([]);
+  const [work, setWork] = useState([]);
 
   useEffect(() => {
     axios.get("./data/education.json").then((response) => {
       setEducation(response.data);
+    });
+  }, []);
+  useEffect(() => {
+    axios.get("./data/work.json").then((response) => {
+      setWork(response.data);
     });
   }, []);
 
@@ -19,12 +26,25 @@ const CV = () => {
       </div>
     );
   });
+  let workList = work.map((work) => {
+    return (
+      <div id={`work-${work.id}`} key={work.id}>
+        <WorkList work={work} />
+      </div>
+    );
+  });
 
   return (
-    <Container>
-      <h1 id="education">Education</h1>
-      <List>{educationList}</List>
-    </Container>
+    <>
+      <Container>
+        <h1 id="education">Education</h1>
+        <List>{educationList}</List>
+      </Container>
+      <Container>
+        <h1 id="work">Work Experience</h1>
+        <List>{workList}</List>
+      </Container>
+    </>
   );
 };
 
