@@ -1,10 +1,12 @@
 import React from "react";
-import { Container } from "semantic-ui-react";
+import { Container, Header } from "semantic-ui-react";
 
 const About = () => {
   return (
     <Container>
-      <h1 id="about-header">About Me</h1>
+      <Header as="h1" id="about-header" color="olive">
+        About Me
+      </Header>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
