@@ -7,7 +7,6 @@ const EducationList = ({ education }) => {
       <List divided relaxed>
         <List.Item>
           {education.institution}
-
           <List.Content>
             <List.Header>{education.programm}</List.Header>
             <List.Description>{education.period}</List.Description>

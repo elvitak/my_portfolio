@@ -10,12 +10,6 @@ const HeaderComponent = ({ fullName }) => {
       </Header>
       <Menu secondary inverted>
         <Menu.Item
-          id="header"
-          name="my portfolio"
-          as={Link}
-          to={{ pathname: "/" }}
-        />
-        <Menu.Item
           id="about-tab"
           name="about me"
           as={NavLink}

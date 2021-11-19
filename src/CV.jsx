@@ -36,12 +36,13 @@ const CV = () => {
 
   return (
     <>
+      <h1 id="cv">Curriculum Vitae</h1>
       <Container>
-        <h1 id="education">Education</h1>
+        <h2 id="education">Education</h2>
         <List>{educationList}</List>
       </Container>
       <Container>
-        <h1 id="work">Work Experience</h1>
+        <h2 id="work">Work Experience</h2>
         <List>{workList}</List>
       </Container>
     </>
