@@ -22,9 +22,10 @@ const Projects = () => {
 
   return (
     <Container>
-      <Header as="h1" id="projects-header" color="olive">
+      <Header as="h1" id="projects-header" color="olive" size="huge" dividing>
         My Projects
       </Header>
+      <br></br>
       <Grid>{projectsList}</Grid>
     </Container>
   );

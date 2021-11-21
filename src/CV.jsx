@@ -1,6 +1,13 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Segment, Grid, List, Divider, Header } from "semantic-ui-react";
+import {
+  Segment,
+  Grid,
+  List,
+  Divider,
+  Header,
+  Container,
+} from "semantic-ui-react";
 import EducationList from "./EducationList";
 import WorkList from "./WorkList";
 
@@ -35,28 +42,26 @@ const CV = () => {
   });
 
   return (
-    <>
+    <Container>
       <Header as="h1" id="cv" color="olive" size="huge" dividing>
         Curriculum Vitae
       </Header>
-      <Segment>
-        <Grid columns={2} relaxed="very">
-          <Grid.Column>
-            <Header as="h2" subheader id="education">
-              Education
-            </Header>
-            <List>{educationList}</List>
-          </Grid.Column>
-          <Grid.Column>
-            <Header as="h2" subheader id="work">
-              Work Experience
-            </Header>
-            <List>{workList}</List>
-          </Grid.Column>
-        </Grid>
-        <Divider vertical>And</Divider>
-      </Segment>
-    </>
+
+      <Grid columns={2} relaxed="very">
+        <Grid.Column>
+          <Header as="h2" subheader id="education">
+            Education
+          </Header>
+          <List>{educationList}</List>
+        </Grid.Column>
+        <Grid.Column>
+          <Header as="h2" subheader id="work">
+            Work Experience
+          </Header>
+          <List>{workList}</List>
+        </Grid.Column>
+      </Grid>
+    </Container>
   );
 };
 
