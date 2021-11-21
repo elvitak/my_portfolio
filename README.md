@@ -1,6 +1,6 @@
 # Deployed site can be visited
 
-[Elvita's portfolio]https://elvitasportfolio.netlify.app
+[My Portfolio](https://elvitasportfolio.netlify.app)
 
 ## Available Scripts
 
