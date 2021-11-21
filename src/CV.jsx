@@ -1,13 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import {
-  Segment,
-  Grid,
-  List,
-  Divider,
-  Header,
-  Container,
-} from "semantic-ui-react";
+import { Grid, List, Header, Container } from "semantic-ui-react";
 import EducationList from "./EducationList";
 import WorkList from "./WorkList";
 
