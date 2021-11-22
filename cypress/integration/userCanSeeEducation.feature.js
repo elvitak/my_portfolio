@@ -30,7 +30,7 @@ describe("User can see list of education", () => {
       cy.get(".item").should("contain", "Craft Academy");
       cy.get(".header").should(
         "contain",
-        "sertificate of excellence , Junior developer"
+        "Certificate of excellence , Junior developer"
       );
       cy.get(".description").should("contain", "2021");
     });
